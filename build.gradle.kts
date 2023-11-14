@@ -24,9 +24,15 @@ application {
 
 repositories {
     mavenCentral()
+    maven(url = "https://repo.opencollab.dev/maven-releases/")
 }
 
+
 dependencies {
+    // Libreria de Minecraft
+    implementation("com.github.steveice10:mcprotocollib:(1.20)")
+
+
     implementation("io.ktor:ktor-server-core-jvm")
     implementation("io.ktor:ktor-serialization-kotlinx-json-jvm")
     implementation("io.ktor:ktor-server-content-negotiation-jvm")
